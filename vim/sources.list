@@ -1,0 +1,127 @@
+## Start Repository List ##
+
+###########################
+## OFFICIAL DEBIAN REPOS #
+###########################
+
+####################
+## Debian Unstable ##
+####################
+# Debian sid FAQ - http://wiki.debian.org/DebianUnstable#FAQ
+# There is no security, volatile or backports repo for unstable.
+# Unstable Sid
+#deb http://http.us.debian.org/debian/ unstable main contrib non-free
+# Unstable Sources
+#deb-src http://http.us.debian.org/debian/ unstable main contrib non-free
+
+###################
+## Debian Testing ##
+###################
+# Testing
+deb http://httpredir.debian.org/debian testing main contrib non-free
+deb-src http://httpredir.debian.org/debian testing main contrib non-free
+
+# Testing Security  http://secure-testing-master.debian.net/
+deb http://security.debian.org testing/updates main contrib non-free
+deb-src http://security.debian.org testing/updates main contrib non-free
+
+#Testing Proposed Updates
+# deb http://ftp.debian.org/debian/ testing-proposed-updates main contrib non-free
+# deb-src http://ftp.debian.org/debian/ testing-proposed-updates main contrib non-free
+
+##################
+## Debian Stable  ##
+##################
+# Stable
+deb http://httpredir.debian.org/debian stable main contrib non-free
+# Stable Sources
+deb-src http://httpredir.debian.org/debian stable main contrib non-free
+
+# Security Updates  http://www.debian.org/security/
+deb http://security.debian.org/ stable/updates main contrib non-free
+
+# Debian Stable Backports
+# For information visit - http://backports.debian.org/
+# deb http://backports.debian.org/debian-backports squeeze-backports main contrib non-free
+# Squeeze-backports-sloppy http://backports.debian.org/news/squeeze-backports-sloppy_created/
+# deb http://backports.debian.org/debian-backports squeeze-backports-sloppy main contrib non-free
+
+############
+## Custom ##
+############
+
+# deb http://httpredir.debian.org/debian experimental main # Experimental packages. Here be dragons.
+deb https://dl.bintray.com/alanfranz/atom-apt stable main
+deb http://download.opensuse.org/repositories/home:/Horst3180/Debian_8.0/ / # Arc-gtk themes - really nice
+
+# Enpass Password Manager (nonfree software)
+# deb http://repo.sinew.in/ stable main
+
+# Syncthing (P2P file syncronization)
+# deb http://apt.syncthing.net/ syncthing release
+
+##########################
+# Google APT Repositories #
+##########################
+# wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+# or (gpg --keyserver subkeys.pgp.net --recv A040830F7FAC5991 && gpg --export --armor A040830F7FAC5991 | sudo apt-key add - )
+# Google Chrome repo http://www.google.com/linuxrepositories/
+deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
+# Google Talk browser plugin http://www.google.com/chat/video
+# deb http://dl.google.com/linux/talkplugin/deb/ stable main
+# Google Earth
+# deb http://dl.google.com/linux/earth/deb/ stable main
+# Google's Music Manager
+# http://www.google.com/support/music/bin/answer.py?answer=1229970
+# deb http://dl.google.com/linux/musicmanager/deb/ stable main
+
+
+#################
+##  MULTIMEDIA  ##
+#################
+
+# Spotify - http://www.spotify.com/int/download/previews/
+# Secure APT - gpg --keyserver wwwkeys.de.pgp.net --recv-keys 4E9CFF4E
+# gpg --export 4E9CFF4E |sudo apt-key add -
+# deb http://repository.spotify.com stable non-free
+
+# Nuvola Player - native wrapper around streaming websites (Google Play, etc)
+# deb https://tiliado.eu/nuvolaplayer/repository/deb/ stretch stable
+
+# Plex Media Server - https://forums.plexapp.com/index.php/topic/32852-plex-media-server-debian-repository/
+# deb http://plex.originet.eu/ stable main
+
+###############
+##  PRIVACY  ##
+###############
+
+#  I2P for more info see
+# http://www.i2p2.de/debian#debian
+
+# Tor http://www.torproject.org/docs/debian.html.en
+# Secure APT - gpg --keyserver keys.gnupg.net --recv 886DDD89
+# gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | apt-key add -
+# put the codename of your distribution (i.e. etch, lenny,squeeze, sid) in place of <DISTRIBUTION>.
+deb http://deb.torproject.org/torproject.org testing main
+# Experimental
+#deb http://deb.torproject.org/torproject.org <DISTRIBUTION> main
+#deb http://deb.torproject.org/torproject.org experimental-<DISTRIBUTION> main
+
+###########
+## UTILS ##
+###########
+
+# Printer Driver Packages | The Linux Foundation
+#  http://www.linuxfoundation.org/collaborate/workgroups/openprinting/databasedriverpackages
+# deb http://www.openprinting.org/download/printdriver/debian/  lsb3.2 main contrib main-nonfree
+
+# Download Dropbox - Dropbox - https://www.dropbox.com/install
+# Also in official Debian repos
+# https://www.dropbox.com/download?dl=packages/debian/dropbox_1.4.0_i386.deb
+# https://www.dropbox.com/download?dl=packages/debian/dropbox_1.4.0_amd64.deb
+# deb http://linux.dropbox.com/debian wheezy main
+
+# SpiderOak  Online Backup - https://spideroak.com/
+# SpiderOak APT/RPM Repository - http://apt.spideroak.com/
+# APT key: http://apt.spideroak.com/spideroak-apt-pubkey.asc
+# deb http://apt.spideroak.com/debian/ stable non-free
